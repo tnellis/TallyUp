@@ -1,0 +1,18 @@
+<form>
+    <div class="form-group">
+        <small>Title of Vote:</small>
+        {{input type="text" class="form-control" value=title placeholder="Title..."}}
+    </div>
+    <br />
+    <div class="form-group">
+        <small>Choice and Address:</small>
+        {{input type="text" class="form-control" value=opt1 placeholder="Option..."}}
+    </div> 
+    <div class="form-group">
+        {{input type="text" class="form-control" value=address1 placeholder="Address..."}}
+    </div>
+    <br />
+    <div class="form-group">
+        <button {{action 'newPoll'}} class="btn btn-primary">Save Poll</button>
+    </div>
+</form>

@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      {{#link-to 'index'}}
+      <img src="/assets/images/TallyUpGreen.png" style="width: 30%; height: 30%;" alt="TallyUp">
+      {{/link-to}}
+    </div>
+    <ul class="nav navbar-nav mr-auto">
+        <li class="nav-item">{{#link-to 'polls'}}
+        Current Polls
+        {{/link-to}}</li>
+        <li class="nav-item">{{#link-to 'prevresults'}}
+        Previous Results
+        {{/link-to}}</li>
+    </ul>
+  </div>
+</nav>
+<br />
+<br />
+<br />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            {{outlet}}
+        </div>
+    </div>
+</div>

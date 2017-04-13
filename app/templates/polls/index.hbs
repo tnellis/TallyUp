@@ -1,0 +1,17 @@
+{{#link-to 'polls.newpoll'}}
+<span class="badge badge-pill badge-tally">New Poll</span>
+{{/link-to}}
+<h4>Current Polls:</h4>
+
+{{#each model as |poll|}}
+    <div class="well">
+        <h4>{{#link-to "polls.vote" poll}}{{poll.id}}{{/link-to}}</h4>
+        <small>{{format-date poll.expiretime}}</small>
+        <br /><br />
+        
+        <small>is currently winning/the winner!</small>
+        
+    </div>
+{{/each}}
+
+{{outlet}}
